@@ -1,0 +1,59 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+  min-height:100vh;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+  max-width:100%;
+}
+
+header {display:flex; flex-flow:row nowrap; align-items:center; justify-content:center; margin:10px; background:yellow;}
+header div{display:flex; flex-flow:column nowrap; width:35%;margin:0; padding:0;margin-left:10px; align-content:center;}
+header h1 {font-size:2rem;}
+header img {min-width:150px;}
+header .subheading {font-weight:bold;font-size:1.5rem;}
+
+nav {background:rgb(66, 209, 244); width:80%;margin:0 auto;}
+nav button {}
+nav ul {list-style-type: none; margin: 0; padding: 0;display:flex;}
+nav ul li {flex:1; padding:5px;text-align:center;}
+nav ul li a {width: 60px; text-decoration:none; color:black;}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+main {}
+main h2 {text-align:center;}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 40%; float:left;}
+ section.forecast { display:none;} 
+section {}
+
+.current, .highlow{
+	font-size:2em;
+	font-weight:bold;
+	text-align:center;
+}
+.forecast{clear:both;}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 100%; /* fill the page in the small/phone view */
+  margin: 5%;
+}
+table{}
+th, td{ }
+footer {}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+img {width:15%;margin:5px;}
+p img{float:right;}
+picture img{float:left;}
+header img{
+	width:10%;
+}
