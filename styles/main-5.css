@@ -6,6 +6,7 @@ body {
   font-size: 16px;
   /* Declare the base font-family - from google font api or other */
   min-height:100vh;
+  background-color:rgb(158, 227, 255);
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
@@ -13,7 +14,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   max-width:100%;
 }
 
-header {display:flex; flex-flow:row nowrap; align-items:center; justify-content:center; margin:10px; background:yellow;}
+header {display:flex; flex-flow:row nowrap; align-items:center; justify-content:center; margin:10px; background-color:rgb(50, 137, 173);color:white;}
 header div{display:flex; flex-flow:column nowrap; width:35%;margin:0; padding:0;margin-left:10px; align-content:center;}
 header h1 {font-size:2rem;}
 header img {min-width:150px;}
@@ -21,7 +22,7 @@ header .subheading {font-weight:bold;font-size:1.5rem;}
 
 nav {background:rgb(66, 209, 244); width:80%;margin:0 auto;}
 nav button {}
-nav ul {list-style-type: none; margin: 0; padding: 0;display:flex;}
+nav ul {list-style-type: none; margin: 0; padding: 0;display:flex; font-size:1.5em; font-weight:bold;}
 nav ul li {flex:1; padding:5px;text-align:center;}
 nav ul li a {width: 60px; text-decoration:none; color:black;}
 nav ul li.active a {}
