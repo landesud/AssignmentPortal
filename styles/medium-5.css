@@ -6,5 +6,13 @@
   section.forecast { display:block}  /* show the 10-day forecast with the medium view and up */
   
   article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+  nav ul.hide{display:flex;}
+nav {background:rgb(66, 209, 244); width:80%;margin:0 auto;}
+nav button {}
+nav ul {list-style-type: none; margin: 0; padding: 0;display:flex; font-size:2.5vw; font-weight:bold;}
+nav ul li {flex:1; padding:0; margin:0; text-align:center; text-wrap:none;}
+nav ul li a {text-decoration:none; color:black; padding:0; margin:0;}
+nav ul li.active a {}
+nav ul li a:hover {}
 
 }

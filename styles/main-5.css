@@ -7,6 +7,7 @@ body {
   /* Declare the base font-family - from google font api or other */
   min-height:100vh;
   background-color:rgb(158, 227, 255);
+ font-family: 'Source Sans Pro', sans-serif;
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
@@ -22,11 +23,13 @@ header .subheading {font-weight:bold;font-size:1.5rem;}
 
 nav {background:rgb(66, 209, 244); width:80%;margin:0 auto;}
 nav button {}
-nav ul {list-style-type: none; margin: 0; padding: 0;display:flex; font-size:1.5em; font-weight:bold;}
-nav ul li {flex:1; padding:5px;text-align:center;}
-nav ul li a {width: 60px; text-decoration:none; color:black;}
-nav ul li.active a {}
-nav ul li a:hover {}
+nav ul {list-style-type: none; margin: 5px; padding: 0; font-size:1.5rem; font-weight:bold;}
+nav ul li {}
+nav ul li a { text-decoration:none; color:black; display:block; }
+nav ul li.active a { background-color:rgb(158, 227, 255); color:black;}
+nav ul li a:hover {background-color:blue; color:white;}
+
+nav ul.hide{display:none;}
 
 main {}
 main h2 {text-align:center;}
@@ -58,3 +61,4 @@ picture img{float:left;}
 header img{
 	width:10%;
 }
+
