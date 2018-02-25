@@ -25,25 +25,29 @@ nav {background:rgb(66, 209, 244); width:80%;margin:0 auto;}
 nav button {}
 nav ul {list-style-type: none; margin: 5px; padding: 0; font-size:1.5rem; font-weight:bold;}
 nav ul li {}
-nav ul li a { text-decoration:none; color:black; display:block; }
+nav ul li a { text-decoration:none; color:black; display:grid; }
 nav ul li.active a { background-color:rgb(158, 227, 255); color:black;}
 nav ul li a:hover {background-color:blue; color:white;}
 
 nav ul.hide{display:none;}
-
-main {}
+#fl{display:flex; flex-flow:row nowrap;}
+#sun{width:40%;}
+main { }
 main h2 {text-align:center;}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 40%; float:left;}
- section.forecast { display:none;} 
+main figure { margin: 0 0 .2rem 2%; width:50%; }
+main figure img {width:80%;}
+section.forecast { display:none;} 
 section {}
-
+#img-grid{display:grid; grid-template-columns: auto;}
+#img-grid img:hover{border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;}
 .current, .highlow{
 	font-size:2em;
 	font-weight:bold;
 	text-align:center;
 }
-.forecast{clear:both;}
+.forecast{}
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   width: 100%; /* fill the page in the small/phone view */
   margin: 5%;

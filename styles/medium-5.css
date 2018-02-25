@@ -14,5 +14,5 @@ nav ul li {flex:1; padding:0; margin:0; text-align:center; text-wrap:none;}
 nav ul li a {text-decoration:none; color:black; padding:0; margin:0;}
 nav ul li.active a {}
 nav ul li a:hover {}
-
+#img-grid{display:grid; grid-template-columns: auto auto;}
 }
