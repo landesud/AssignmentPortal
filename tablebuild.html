@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Table Build Week 8</title>
+		<style>
+		body{background-color:blue;}
+		main{display:flex;justify-content:center;align-items:center; height:100vh;}
+			table{
+			font-family:Ubuntu, sans-serif;
+			text-align:center;
+			
+			}
+			td, th{padding:5px;}
+			caption{background-color:#7fb9c2; font-size:1.4em; font-weight:bold; padding:8px;}
+			th{background-color:#628ca6; color:white;font-weight:bold;}
+			tr:nth-child(even) {background-color:#e7ffed; }
+			tr:nth-child(odd) {background-color: #e7f0ed;}
+			.bb{background-color:#628ca6;}
+			tfoot td {background-color:#7fb9c2;}
+		</style>
+	</head>
+	<body>
+		<main>
+			<table>
+			<caption>ACME WildWest</caption>
+				<thead>
+					<th>Period</th>
+					<th>Sales</th>
+					<th>Sales Goal</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>August</td>
+						<td>$3,590</td>
+						<td>$4,000</td>
+					</tr>
+					<tr>
+						<td>September</td>
+						<td>$4,420</td>
+						<td>$5,000</td>
+					</tr>
+					<tr>
+						<td>October</td>
+						<td>$4,870</td>
+						<td>$5,000</td>
+					</tr>
+					<tr>
+						<td>November</td>
+						<td>$8,610</td>
+						<td class="bb">$7,500</td>
+					</tr>
+					<tr>
+						<td>Black Friday</td>
+						<td colspan="2">$3,200</td>
+					</tr>
+					<tr>
+						<td>December</td>
+						<td>$6,820</td>
+						<td>$7,500</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3"><small>Compiled 12.20.2020 by bRauls</small></td>
+					</tr>
+				</tfoot>
+			</table>
+		</main>
+	</body>
+</html>
