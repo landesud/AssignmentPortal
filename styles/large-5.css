@@ -4,5 +4,4 @@
   article p.town-article img { width: 29.333%; }
   nav ul {font-size:1.5rem;}
   #img-grid{display:grid; grid-template-columns: auto auto auto;}
-  textarea{width:50%;height:80px;}
 }
