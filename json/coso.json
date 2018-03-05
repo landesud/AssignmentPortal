@@ -1,0 +1,41 @@
+{
+  "squadName" : "BYU-I CIT 230",
+  "homeTown" : "Idaho",
+  "formed" : 1881,
+  "secretBase" : "Web Design & Development",
+  "active" : true,
+  "members" : [
+    {
+      "name" : "Emmanuel Landeros",
+      "age" : 25,
+      "secretIdentity" : "None",
+      "powers" : [
+        "Active Learner",
+        "Active Worker",
+        "Dedicated"
+      ]
+    },
+    {
+      "name" : "Jose Galán",
+      "age" : 25,
+      "secretIdentity" : "None",
+      "powers" : [
+        "Front End Learner",
+        "Back End Learner",
+        "Database Manager"
+      ]
+    },
+    {
+      "name" : "Another thing",
+      "age" : 10,
+      "secretIdentity" : "Unknown",
+      "powers" : [
+        "Immortality",
+        "Heat Immunity",
+        "Inferno",
+        "Teleportation",
+        "Interdimensional travel"
+      ]
+    }
+  ]
+}
