@@ -31,7 +31,7 @@ nav ul li a:hover {background-color:blue; color:white;}
 
 nav ul.hide{display:none;}
 #fl{display:flex; flex-flow:row nowrap;}
-#sun{width:20%;margin-bottom:125px;}
+#sun{width:20%;margin-bottom:150px;}
 main { }
 main h2 {text-align:center;}
 main figure { margin: 0 0 .2rem 2%; width:50%; }
