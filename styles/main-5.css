@@ -108,3 +108,7 @@ header img{
 	width:10%;
 }
 
+#mainJson{min-height:30vw; display:flex;justify-content:center;align-items:center;}
+#json{display:grid; grid-template-columns: auto; grid-gap: 10px;}
+#json article{ background:white; padding:5px;margin:5px;box-shadow: 7px 10px 10px grey;}
+#second{width:100%;}
