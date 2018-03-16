@@ -30,9 +30,11 @@ nav ul li.active a { background-color:rgb(158, 227, 255); color:black;}
 nav ul li a:hover {background-color:blue; color:white;}
 
 nav ul.hide{display:none;}
-#fl{display:flex; flex-flow:row nowrap;}
-#sun{width:20%;margin-bottom:150px;}
-main { }
+#sun{width:20%;margin-bottom:100px;}
+#fl{display:flex; flex-flow:row wrap;}
+#fl figure{width:100%;}
+#fl figure img{width:90%; margin:auto;}
+main {width:100%;}
 main h2 {text-align:center;}
 main figure { margin: 0 0 .2rem 2%; width:50%; }
 main figure img {width:80%;}

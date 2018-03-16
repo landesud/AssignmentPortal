@@ -16,4 +16,6 @@ nav ul li.active a {}
 nav ul li a:hover {}
 #img-grid{display:grid; grid-template-columns: auto auto;}
 #json{display:grid; grid-template-columns: auto auto; grid-gap: 10px;}
+#fl figure{width:80%;}
+#fl figure img{width:90%; margin:auto;}
 }
