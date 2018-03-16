@@ -1,5 +1,5 @@
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET','http://api.wunderground.com/api/8e74e5070463a375/conditions/q/MN/Franklin.json', true);
+weatherObject.open('GET','http://api.wunderground.com/api/8e74e5070463a375/conditions/q/TX/Greenville.json', true);
 
 weatherObject.send();
 
@@ -16,7 +16,7 @@ document.getElementById("wind").innerHTML = weatherInfo.current_observation.wind
 document.getElementById("feelsLike").innerHTML = weatherInfo.current_observation.feelslike_f
 }
 var weatherDesc = new XMLHttpRequest();
-weatherDesc.open('GET','http://api.wunderground.com/api/8e74e5070463a375/forecast/q/MN/Franklin.json', true);
+weatherDesc.open('GET','http://api.wunderground.com/api/8e74e5070463a375/forecast/q/TX/Greenville.json', true);
 
 weatherDesc.send();
 weatherDesc.onload = function() {
@@ -26,4 +26,3 @@ document.getElementById("high").innerHTML = desc.forecast.simpleforecast.forecas
 document.getElementById("low").innerHTML = desc.forecast.simpleforecast.forecastday["0"].low.fahrenheit
 document.getElementById("desc").innerHTML = desc.forecast.txt_forecast.forecastday[7].fcttext
 }
-
