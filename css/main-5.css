@@ -1,0 +1,116 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+  min-height:100vh;
+  background-color:rgb(158, 227, 255);
+ font-family: 'Source Sans Pro', sans-serif;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+  max-width:100%;
+}
+
+header {display:flex; flex-flow:row nowrap; align-items:center; justify-content:center; margin:10px; background-color:rgb(50, 137, 173);color:white;}
+header div{display:flex; flex-flow:column nowrap; width:35%;margin:0; padding:0;margin-left:10px; align-content:center;}
+header h1 {font-size:2rem;}
+header img {min-width:150px;}
+header .subheading {font-weight:bold;font-size:1.5rem;}
+
+nav {background:rgb(66, 209, 244); width:80%;margin:0 auto;}
+nav button {}
+nav ul {list-style-type: none; margin: 5px; padding: 0; font-size:1.5rem; font-weight:bold;}
+nav ul li {}
+nav ul li a { text-decoration:none; color:black; display:grid; }
+nav ul li.active a { background-color:rgb(158, 227, 255); color:black;}
+nav ul li a:hover {background-color:blue; color:white;}
+
+nav ul.hide{display:none;}
+#sun{width:20%;margin-bottom:100px;}
+#fl{display:flex; flex-flow:row wrap;}
+#fl figure{width:100%;}
+#fl figure img{width:90%; margin:auto;}
+main {width:100%;}
+main h2 {text-align:center;}
+main figure { margin: 0 0 .2rem 2%; width:50%; }
+main figure img {width:80%;}
+section.forecast { display:none;} 
+section {}
+#img-grid{display:grid; grid-template-columns: auto;}
+#img-grid img:hover{border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;}
+.current, .highlow{
+	font-size:2em;
+	font-weight:bold;
+	text-align:center;
+}
+form{margin: 1em 3%;}
+fieldset{
+	background-color: rgb(66, 209, 244);
+	border-radius: .8em;
+	margin:1.5em 0;
+	border: rgb(50, 137, 173) solid 1px;
+	}
+legend{
+	color: white;
+	margin-left:6%;
+	padding: .5em;
+	border: rgb(50, 137, 173) solid 1px;
+	background-color: rgb(50, 137, 173);
+	border-radius: .4em;
+}
+label{
+	display:block;
+	margin: .5em;
+}
+label span{
+	display:block;
+	font-size: .8em;
+	color: black;
+	padding-top:.9em;
+	padding-bottom: .2em;
+	}
+	input:required ~ em:after { content: " *"; color:red;}
+textarea{width:100%;height:80px; max-width:37.5em;}
+	
+
+#submit{
+	-webkit-appearance:none;
+	color: #fff;
+	border: solid 1px #111;
+	border-radius:7px;
+	width:50%;
+	margin:.5em 0;
+	font-size:1em;
+	padding:.6em;
+	background:#7d2a35;
+	box-shadow:4px 4px 10px #666;
+}
+.forecast{}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 100%; /* fill the page in the small/phone view */
+  margin: 5%;
+}
+table{}
+th, td{ }
+footer {}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+img {width:15%;margin:5px;}
+p img{float:right;}
+picture img{float:left;}
+header img{
+	width:10%;
+}
+
+#mainJson{min-height:30vw; display:flex;justify-content:center;align-items:center;}
+#json{display:grid; grid-template-columns: auto; grid-gap: 10px;}
+#json article{ background:white; padding:5px;margin:5px;box-shadow: 7px 10px 10px grey;}
+#second{width:100%;}
